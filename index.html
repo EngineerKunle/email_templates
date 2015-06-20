@@ -5,23 +5,26 @@
  	<title>KunleHtml</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style type="text/css">
-        .mobile-full-width{
-                display: block;
-                width: 100%;
-                padding: 0 20px;                
-                box-sizing: border-box;
-            }
-        #logoContainer{
-            background-color: #cfcfcf;
-        }
-        .desktop-only{
-            display: block !important;
-        }
+        body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+        #bodyTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+        #logoContainer{background-color: #cfcfcf;}
+        #callToActionContainer{}
+        #emailContainer{}
+        #logoContainer{}
+        #middleContainer{}
+        #lowerContainer{}
+        #buttonClick{color: #D83826;display: block;font-size: 24px;font-weight: bold;line-height: 100%;letter-spacing: -1px;text-align: center;text-decoration: none;}
+        
+        .desktop-only{display: block !important;}
+        .mobile-full-width{display: block; width: 100%; padding: 0 20px; box-sizing: border-box;}
+        .callToActionIntent{padding-bottom: 30px;}
+        .callToActionButton{border-collapse: collapse; background-color: #F0F0F0; border-radius: 4px;box-shadow: 0 5px 0 #A22A1C;}
+        .callToButtonActionButtonContent{padding: 10px 20px 10px 20px; display: block; color: #D83826; font-size: 24; font-weight: bold; line-height: 100%; text-align: center; text-decoration: none;}
 
     </style>
 </head>
 <body margin="0" padding="0">
-<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" id="bodyTable">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" id="bodyTable" padding="0">
     <tr>
         <td align="center" valign="top" id="bodyCell">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer">
@@ -60,7 +63,7 @@
                 <tr><td height="21"></td></tr>
                     <!--Beginning of bottleMiddle content-->
                 <tr>
-                    <td align="center" valign="top" id="`lowerContainer">
+                    <td align="center" valign="top" id="lowerContainer">
                         <table cellspacing="0" cellpadding="0" width="600">
                             <tr>
                                 <td>
@@ -71,9 +74,9 @@
                                             </td>
                                             <td valign="top">
                                                 <table cellspacing="0" cellspacing="0">
-                                                <tr>
-                                                    <td>Bacon ipsum dolor amet frankfurter bresaola bacon beef rump meatball. Flank pig filet mignon biltong pork loin jowl ham hock shoulder pork frankfurter. Short loin pastrami swine beef. Tri-tip doner tenderloin, boudin beef ribs salami short loin filet mignon. Ribeye swine kielbasa brisket pork loin boudin frankfurter.</td>
-                                                </tr>
+                                                    <tr>
+                                                        <td>Bacon ipsum dolor amet frankfurter bresaola bacon beef rump meatball. Flank pig filet mignon biltong pork loin jowl ham hock shoulder pork frankfurter. Short loin pastrami swine beef. Tri-tip doner tenderloin, boudin beef ribs salami short loin filet mignon. Ribeye swine kielbasa brisket pork loin boudin frankfurter.</td>
+                                                    </tr>
                                                 </table>
                                             </td>
                                         </tr>
@@ -81,7 +84,30 @@
                                 </td>
                             </tr>
                         </table>
-                        
+                    </td>
+                </tr>
+                <tr><td height="21"></td></tr>
+                <tr>
+                    <td align="center" valign="top" id="callToActionContainer" bgcolor="#D83826" padding="40">
+                        <table id="callToActionBlock" width="600" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td class="callToActionIntent" valign="top" align="center">
+                                    <h3>Tap Below<br>Ham biltong pork loin turducken.</h3>
+                                    Shoulder chicken porchetta strip steak, jerky t-bone capicola cow beef ribs hamburger spare ribs shankle brisket kielbasa ham. Bacon tenderloin chuck venison, ball tip pig sausage drumstick cupim. Boudin pork corned beef beef jerky chuck landjaeger cow. Pastrami landjaeger shank t-bone boudin chicken.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellspacing="0" cellpadding="0" class="callToActionButton">
+                                        <tr>
+                                            <td align="center" valign="top" class="callToButtonActionButtonContent">
+                                                <a href="#" target="_blank" id="buttonClick">Click up</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>  
                     </td>
                 </tr>
                 <tr>
