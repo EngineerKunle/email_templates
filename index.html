@@ -5,7 +5,15 @@
  	<title>KunleHtml</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style type="text/css">
+        /* Based on The MailChimp Reset INLINE: Yes. */  
+        /* Client-specific Styles */
+        #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+        table{border-collapse:collapse;}
+        img, a img{border:0; outline:none; text-decoration:none;}
+        h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+        p{margin: 1em 0;}
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
         #bodyTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
         #logoContainer{background-color: #cfcfcf;}
         #callToActionContainer{padding: 20px 40px 20px 40px}
@@ -14,6 +22,7 @@
         #middleContainer{}
         #lowerContainer{}
         #buttonClick{color: #D83826;display: block;font-size: 24px;font-weight: bold;line-height: 100%;letter-spacing: -1px;text-align: center;text-decoration: none;}
+        #footerContainer{padding-bottom: 40px}
         
         .desktop-only{display: block !important;}
         .mobile-full-width{display: block; width: 100%; padding: 0 20px; box-sizing: border-box;}
@@ -121,6 +130,27 @@
                             </tr>
                             <tr>
                                 <td align="center" valign="top" class="footer_up" style="font-family:&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;font-weight:100; line-height:100%">&copy; 2013 Kunle ltd. &bull; 123 lorem Ipsum &bull; London, UK QW2 ER</td>
+                            </tr>
+                            <tr><td height="21"></td></tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <img src="img/facebook-icon.png" alt="facebook">
+                                            </td>
+                                            <td align="center" valign="top">
+                                                <img src="img/Twitter-icon-2.png" alt="Twitter">
+                                            </td>
+                                            <td align="center" valign="top">
+                                                <img src="img/Youtube-icon.png" alt="Youtube">
+                                            </td>
+                                            <td align="center" valign="top">
+                                                <img src="img/Linkedin.png" alt="Linkedin">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
                             </tr>
                         </table>
                     </td>
