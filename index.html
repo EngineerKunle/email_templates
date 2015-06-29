@@ -18,21 +18,21 @@
         /* Normal id and classes*/
         #bodyTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
         #logoContainer{background-color: #cfcfcf;}
-        #callToActionContainer{padding: 20px 40px 20px 40px}
-        #emailContainer{}
+        #callToActionContainer{}
+        .emailContainer{}
         #logoContainer{}
         #middleContainer{}
         #lowerContainer{}
         #buttonClick{color: #D83826;display: block;font-size: 24px;font-weight: bold;line-height: 100%;letter-spacing: -1px;text-align: center;text-decoration: none;}
-        #footerContainer{padding-bottom: 40px}
+        #footerContainer{}
         
-        .desktop-only{display: block !important;}
-        .mobile-full-width{display: block; width: 100%; padding: 0 20px; box-sizing: border-box;}
-        .callToActionIntent{padding-bottom: 30px; font-family: "Palatino Linotype", Book Antiqua, Palatino, serif; color: #ffffff; line-height: 100%; font-weight: 100;}
-        .callToActionButton{border-collapse: collapse; background-color: #F0F0F0; border-radius: 4px;box-shadow: 0 5px 0 #A22A1C;}
-        .callToButtonActionButtonContent{padding: 10px 20px 10px 20px; display: block; color: #D83826; font-size: 24; font-weight: bold; line-height: 100%; text-align: center; text-decoration: none;}
+        
+        .mobile-full-width{display: block; width: 100%; box-sizing: border-box;}
+        .callToActionIntent{font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif"; color: #ffffff; line-height: 100%; font-weight: 100;}
+        .callToActionButton{border-collapse: collapse; background-color: #F0F0F0; border-radius: 4px;box-shadow: 0 0px 0 #A22A1C;}
+        .callToButtonActionButtonContent{display: block; color: #D83826; font-size: 24; font-weight: bold; line-height: 100%; text-align: center; text-decoration: none;}
         .footerContent{}
-        .footer_up{padding-top: 30px; color:#F0F0F0; }
+        .footer_up{color:#F0F0F0; }
         /*end Id and classes*/
 
         /***************************************************
@@ -40,6 +40,45 @@
         MOBILE TARGETING
         ****************************************************
         ***************************************************/
+        @media only screen and (max-width: 480px){
+
+            /*////// CLIENT-SPECIFIC STYLES //////*/
+            body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+                
+            /*////// GENERAL STYLES //////*/
+            h1{font-size:34px !important;}
+            h2{font-size:30px !important;}
+            h3{font-size:24px !important;}
+
+            td[class="desktop-only"]{display: none !important;}
+
+            table[class="emailContainer"]{width: 100% !important; display: block;}
+            td[id="logoContainer"]{width: 100% !important; background-color: #cfcfcf !important;}
+
+            img[id="heroImage"]{height:auto !important; max-width:371px !important; width:100% !important;}
+
+            table[class="resp-mobile"]{ width:100% !important; height: auto !important;}
+
+            td[id="middleContainer"]{width: 100% !important; display: block;}
+            td[class="mobile-full-width"]{width: 100% !important; display: block;}
+            td[id="lowerContainer"]{width: 100% !important; display: block;}
+
+            td[id="callToActionContainer"]{width: 100% !important; display: block;}
+            table[id="callToActionBlock"]{width: 100% !important; display: block;}
+            td[class="callToActionIntent"]{width: 100% !important; display: block;}
+
+            table[class="callToActionButton"]{width: 50% !important; display: block;}
+            td[class="callToButtonActionButtonContent"]{width: 100% !important; display: block;}
+
+            td[id="footerContainer"]{width: 100% !important; display: block;}
+            td[class="footerContent"]{width: 100% !important; display: block;}
+
+            img[class~=mobile-full-bleed]{
+                width: 100% !important;
+                height: auto !important;
+            }
+
+         }
     
     </style>
 </head>
@@ -47,15 +86,17 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" id="bodyTable" padding="0">
     <tr>
         <td align="center" valign="top" id="bodyCell">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer">
+            <table border="0" cellpadding="0" cellspacing="0" width="600" class="emailContainer">
                 <tr>
-                    <td align="center" valign="top" id="logoContainer">
+                    <td align="center" valign="top" id="logoContainer" bgcolor="#cfcfcf">
                         <!--Begin of Logo-->
-                        <img src="img/cohaesus.png" alt="Cohaesus" width="520" height="300">
+                        <img src="img/cohaesus.png" alt="Cohaesus"id="heroImage" style="max-width:100%;">
                         <!--End of Logo-->
                     </td>
                 </tr>
-                <tr><td height="21"></td></tr>
+                <tr>
+                    <td height="21" class="desktop-only"></td>
+                </tr>
                 <tr>
                     <!--Beginning of topMiddle content-->
                     <td align="center" valign="top" id="middleContainer">
@@ -64,15 +105,20 @@
                                 <td>
                                     <table cellpadding="0" cellspacing="0" width="100%">
                                         <tr>
-                                            <td valign="top" class="mobile-full-width">
-                                                <table cellpadding="0" cellspacing="0">
-                                                    <tr><td height="10" class="desktop-only"></td></tr>
+                                            <td>
+                                                <table width="49%" cellpadding="0" cellspacing="0" border="0" align="left" class="resp-mobile">
                                                     <tr>
-                                                        <td>iam quis finibus iaculis. Suspendisse vel nunc nec ipsum convallis fringilla. Nulla elementum blandit neque. Sed ultricies, nisi a dictum aliquam, justo magna lobortis mi, at ullamcorper odio enim</td>
+                                                        <td>
+                                                            <font size="1" color="#000000" face="arial,verdana" style="font-size: 15px;">iam quis finibus iaculis. Suspendisse vel nunc nec ipsum convallis fringilla. Nulla elementum blandit neque. Sed ultricies, nisi a dictum aliquam, justo magna lobortis mi, at ullamcorper odio enim</font>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table width="49%" cellpadding="0" cellspacing="0" border="0" align="right" class="resp-mobile">
+                                                    <tr>
+                                                        <td><img src="http://placehold.it/250x150" class="mobile-full-bleed"></td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td valign="top" height="10"><img src="http://placehold.it/350x150"></td>
                                         </tr>
                                     </table>
                                 </td>
@@ -80,7 +126,9 @@
                         </table>
                     </td>
                 </tr>
-                <tr><td height="21"></td></tr>
+                <tr>
+                    <td height="21" class="desktop-only"></td>
+                </tr>
                     <!--Beginning of bottleMiddle content-->
                 <tr>
                     <td align="center" valign="top" id="lowerContainer">
@@ -89,13 +137,18 @@
                                 <td>
                                     <table cellspacing="0" cellpadding="0" width="100%">
                                         <tr>
-                                            <td valign="top" class="mobile-full-width">
-                                                <img src="img/thoughtful.png" alt="thinking" width="200" height="200">
-                                            </td>
-                                            <td valign="top">
-                                                <table cellspacing="0" cellspacing="0">
+                                            <td>
+                                                <table width="49%" cellspacing="0" cellpadding="0" border="0" align="left" class="resp-mobile">
                                                     <tr>
-                                                        <td>Bacon ipsum dolor amet frankfurter bresaola bacon beef rump meatball. Flank pig filet mignon biltong pork loin jowl ham hock shoulder pork frankfurter. Short loin pastrami swine beef. Tri-tip doner tenderloin, boudin beef ribs salami short loin filet mignon. Ribeye swine kielbasa brisket pork loin boudin frankfurter.</td>
+                                                        <td><img src="img/thoughtful.png" alt="thinking" class="mobile-full-bleed">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table width="49%" cellspacing="0" cellpadding="0" border="0" align="right" class="resp-mobile">
+                                                    <tr>
+                                                        <td>
+                                                            <font size="1" color="#000000" face="arial,verdana" style="font-size: 15px;">Bacon ipsum dolor amet frankfurter bresaola bacon beef rump meatball. Flank pig filet mignon biltong pork loin jowl ham hock shoulder pork frankfurter. Short loin pastrami swine beef. Tri-tip doner tenderloin, boudin beef ribs salami short loin filet mignon. Ribeye swine kielbasa brisket pork loin boudin frankfurter.</font>
+                                                        </td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -106,10 +159,15 @@
                         </table>
                     </td>
                 </tr>
-                <tr><td height="21"></td></tr>
                 <tr>
-                    <td align="center" valign="top" id="callToActionContainer" bgcolor="#D83826" padding="40">
+                    <td height="21" class="desktop-only"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" id="callToActionContainer" bgcolor="#D83826">
                         <table id="callToActionBlock" width="600" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td height="21" class="desktop-only"></td>
+                            </tr>
                             <tr>
                                 <td class="callToActionIntent" valign="top" align="center">
                                     <h3 style="font-family:&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;color:#ffffff; font-weight:100; line-height:100%">Lorem Ipsum<br><br>Ham biltong pork loin turducken.</h3>
@@ -127,6 +185,9 @@
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td height="21" class="desktop-only"></td>
+                            </tr>
                         </table>  
                     </td>
                 </tr>
@@ -134,6 +195,9 @@
                     <td align="center" valign="top" id="footerContainer" bgcolor="#363E41" height="140">
                         <table cellspacing="0" cellspacing="0" width="600" class="footerContent">
                             <tr>
+                            <tr>
+                                <td height="21" class="desktop-only"></td>
+                            </tr>
                                 <td align="center" valign="top" class="footer_up" style="font-family:&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;font-weight:100; line-height:100%">
                                      Swine sausage pork belly pork chop tongue pork loin. Frankfurter filet mignon pork loin, pastrami boudin meatloaf strip steak prosciutto brisket venison
                                 </td>
@@ -141,7 +205,9 @@
                             <tr>
                                 <td align="center" valign="top" class="footer_up" style="font-family:&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;font-weight:100; line-height:100%">&copy; 2013 Kunle ltd. &bull; 123 lorem Ipsum &bull; London, UK QW2 ER</td>
                             </tr>
-                            <tr><td height="21"></td></tr>
+                            <tr>
+                                <td height="21" class="desktop-only"></td>
+                            </tr>
                             <tr>
                                 <td align="center" valign="top">
                                     <table cellpadding="0" cellspacing="0">
