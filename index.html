@@ -51,31 +51,42 @@
             h3{font-size:24px !important;}
 
             td[class="desktop-only"]{display: none !important;}
+            td[id="desktop-only-header"]{display: none !important;}
+            td[id="desktop-only-footer"]{display: none !important;}
+
 
             table[class="emailContainer"]{width: 100% !important; display: block;}
-            td[id="logoContainer"]{width: 100% !important; background-color: #cfcfcf !important;}
+            td[id="logoContainer"]{width: 100% !important; background-color: #cfcfcf !important; padding-top: 40px;}
 
-            img[id="heroImage"]{height:auto !important; max-width:371px !important; width:100% !important;}
+            img[id="heroImage"]{height:auto !important; max-width:371px !important; width:100% !important; padding-bottom: 40px !important;}
 
             table[class="resp-mobile"]{ width:100% !important; height: auto !important;}
+            td[id="contentBlock"]{padding: 40px 20px 40px 20px !important;}
+            td[id="contentBlockB"]{padding: 0px 20px 40px 20px !important;}
 
-            td[id="middleContainer"]{width: 100% !important; display: block;}
-            td[class="mobile-full-width"]{width: 100% !important; display: block;}
-            td[id="lowerContainer"]{width: 100% !important; display: block;}
+            td[id="middleContainer"]{width: 100% !important; display: block !important;}
+            td[class="mobile-full-width"]{width: 100% !important; display: block !important;}
+            td[id="lowerContainer"]{width: 100% !important; display: block !important;}
 
-            td[id="callToActionContainer"]{width: 100% !important; display: block;}
-            table[id="callToActionBlock"]{width: 100% !important; display: block;}
-            td[class="callToActionIntent"]{width: 100% !important; display: block;}
+            td[id="callToActionContainer"]{width: 100% !important; display: block !important;}
+            td[id="buttonStyle"]{padding: 20px 0px 20px 0px;}
+            table[id="callToActionBlock"]{width: 100% !important; display: block !important;}
+            td[class="callToActionIntent"]{width: 100% !important; display: block !important;}
 
-            table[class="callToActionButton"]{width: 50% !important; display: block;}
-            td[class="callToButtonActionButtonContent"]{width: 100% !important; display: block;}
+            table[class="callToActionButton"]{width: 50% !important; display: block !important;}
+            td[class="callToButtonActionButtonContent"]{width: 100% !important; display: block !important;}
+            td[id="buttonStyle"]{padding: 20px 0px 20px 0px !important;}
+            td[id="callToActionIntentTitle"]{padding: 20px 0px 0px 0px !important;}
+            td[class="callToActionIntentContent"]{padding: 20px 20px 0px 20px !important;}
+            
+            td[id="footerContainer"]{width: 100% !important; display: block !important; padding-bottom: 40px;}
+            td[class="footerContent"]{width: 100% !important; display: block !important;}
+            td[id="socialBlock"]{width: 100% !important; display: block !important;}
 
-            td[id="footerContainer"]{width: 100% !important; display: block;}
-            td[class="footerContent"]{width: 100% !important; display: block;}
-
-            img[class~=mobile-full-bleed]{
+            img[class=mobile-full-bleed]{
                 width: 100% !important;
                 height: auto !important;
+                padding-bottom: 40px;
             }
 
          }
@@ -87,6 +98,9 @@
     <tr>
         <td align="center" valign="top" id="bodyCell">
             <table border="0" cellpadding="0" cellspacing="0" width="600" class="emailContainer">
+                <tr>
+                    <td height="21" id="desktop-only-header" bgcolor="#cfcfcf"></td>
+                </tr>
                 <tr>
                     <td align="center" valign="top" id="logoContainer" bgcolor="#cfcfcf">
                         <!--Begin of Logo-->
@@ -108,7 +122,7 @@
                                             <td>
                                                 <table width="49%" cellpadding="0" cellspacing="0" border="0" align="left" class="resp-mobile">
                                                     <tr>
-                                                        <td>
+                                                        <td id="contentBlock">
                                                             <font size="1" color="#000000" face="arial,verdana" style="font-size: 15px;">iam quis finibus iaculis. Suspendisse vel nunc nec ipsum convallis fringilla. Nulla elementum blandit neque. Sed ultricies, nisi a dictum aliquam, justo magna lobortis mi, at ullamcorper odio enim</font>
                                                         </td>
                                                     </tr>
@@ -145,7 +159,7 @@
                                                 </table>
                                                 <table width="49%" cellspacing="0" cellpadding="0" border="0" align="right" class="resp-mobile">
                                                     <tr>
-                                                        <td>
+                                                        <td id="contentBlockB">
                                                             <font size="1" color="#000000" face="arial,verdana" style="font-size: 15px;">Bacon ipsum dolor amet frankfurter bresaola bacon beef rump meatball. Flank pig filet mignon biltong pork loin jowl ham hock shoulder pork frankfurter. Short loin pastrami swine beef. Tri-tip doner tenderloin, boudin beef ribs salami short loin filet mignon. Ribeye swine kielbasa brisket pork loin boudin frankfurter.</font>
                                                         </td>
                                                     </tr>
@@ -172,7 +186,7 @@
                                 <td valign="top" align="center">
                                     <table cellpadding="0" cellspacing="0" border="0">
                                         <tr>
-                                            <td class="callToActionIntent" valign="top" align="center">
+                                            <td id="callToActionIntentTitle" valign="top" align="center">
                                                 <h3 style="font-family:&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;color:#ffffff; font-weight:100; line-height:100%">Lorem Ipsum<br><br>Ham biltong pork loin turducken.
                                                 </h3>
                                             </td>
@@ -183,7 +197,7 @@
                                     </table>
                                     <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                         <tr>
-                                            <td class="callToActionIntent" valign="top" width="50%"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">Shoulder chicken porchetta strip steak, jerky t-bone capicola cow beef ribs hamburger spare ribs shankle brisket kielbasa ham.Pastrami landjaeger shank t-bone boudin chicken.
+                                            <td class="callToActionIntentContent" valign="top" width="50%"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">Shoulder chicken porchetta strip steak, jerky t-bone capicola cow beef ribs hamburger spare ribs shankle brisket kielbasa ham.Pastrami landjaeger shank t-bone boudin chicken.
                                             </font></td>
                                         </tr>
                                     </table>
@@ -195,17 +209,10 @@
                             </tr>
                             <tr>
                                 <td class="desktop-only" width="29"></td>
-                                <td align="center" valign="top">
-                                    <!--table cellspacing="0" cellpadding="0" class="callToActionButton">
-                                        <tr>
-                                            <td align="center" valign="top" class="callToButtonActionButtonContent">
-                                                <a href="#" target="_blank" id="buttonClick">Click up</a>
-                                            </td>
-                                        </tr>
-                                    </table-->
+                                <td align="center" valign="top" id="buttonStyle">
                                     <table cellspacing="0" cellpadding="0">
                                         <tr> 
-                                            <td align="center" width="100" height="40" bgcolor="#F0F0F0" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; display: block;"><a href="#" style="font-size:16px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block"><font style="color:#D83826">Click up</font></a>
+                                            <td align="center" width="100" height="40" bgcolor="#F0F0F0" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; display: block;"><a href="#" style="font-size:16px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block" class="callToButtonActionButtonContent"><font style="color:#D83826">Click up</font></a>
                                             </td> 
                                         </tr>
                                     </table> 
@@ -219,21 +226,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" valign="top" id="footerContainer" bgcolor="#363E41" height="140">
+                    <td align="center" valign="top" id="footerContainer" bgcolor="#363E41">
                         <table cellspacing="0" cellspacing="0" width="600" class="footerContent">
                             <tr>
                                 <td height="21" class="desktop-only"></td>
                             </tr>
                             <tr>
                                 <td class="desktop-only" width="29"></td>
-                                <td align="center" valign="top" class="footer_up"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">
+                                <td align="center" valign="top" class="callToActionIntentContent"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">
                                      Swine sausage pork belly pork chop tongue pork loin. Frankfurter filet mignon pork loin, pastrami boudin meatloaf strip steak prosciutto brisket venison</font>
                                 </td>
                                 <td class="desktop-only" width="29"></td>
                             </tr>
                             <tr>
                                 <td class="desktop-only" width="29"></td>
-                                <td align="center" valign="top" class="footer_up"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">&copy; 2013 Kunle ltd. &bull; 123 lorem Ipsum &bull; London, UK QW2 ER</font>
+                                <td align="center" valign="top" class="callToActionIntentContent"><font size="1" color="#ffffff" face="arial,verdana" style="font-size: 15px;">&copy; 2013 Kunle ltd. &bull; 123 lorem Ipsum &bull; London, UK QW2 ER</font>
                                 </td>
                                 <td class="desktop-only" width="29"></td>
                             </tr>
@@ -242,7 +249,7 @@
                             </tr>
                             <tr>
                                 <td class="desktop-only" width="29"></td>
-                                <td align="center" valign="top">
+                                <td align="center" valign="top" id="socialBlock">
                                     <table cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td align="center" valign="top">
@@ -260,7 +267,9 @@
                                         </tr>
                                     </table>
                                 </td>
-                                <td class="desktop-only" width="29"></td>
+                            </tr>
+                            <tr>
+                                <td height="21" id="desktop-only-footer" bgcolor="#363E41"></td>
                             </tr>
                         </table>
                     </td>
